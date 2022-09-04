@@ -8,5 +8,6 @@ public class Principal {
         System.out.println(mage.status());
         Arqueiro pally = new Arqueiro("Legolas");
         System.out.println(pally.status());
+        Equipe pt = new Equipe(warrior, mage, pally);
     }
 }
