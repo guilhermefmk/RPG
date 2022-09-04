@@ -2,7 +2,8 @@ package classes;
 import Itens.Cajado;
 
 public class Mago extends Personagem {
-    private int mana;
+    private int manaatual;
+    private int manatotal;
     private Cajado cajado;
 
 
@@ -10,9 +11,11 @@ public class Mago extends Personagem {
 
     public Mago(String nome) {
         super(nome);
-        this.mana = 50;
+        this.manaatual = 50;
+        this.manatotal = 50;
         this.cajado = cajadoInicio;
-        this.vida = 14;
+        this.vidatotal = 14;
+        this.vidaatual = 14;
         //TODO Auto-generated constructor stub
     }
 
@@ -31,13 +34,26 @@ public class Mago extends Personagem {
     }
 
 
-    public int getMana() {
-        return mana;
+   
+
+
+    public int getManaatual() {
+        return manaatual;
     }
 
 
-    public void setMana(int mana) {
-        this.mana = mana;
+    public void setManaatual(int manaatual) {
+        this.manaatual = manaatual;
+    }
+
+
+    public int getManatotal() {
+        return manatotal;
+    }
+
+
+    public void setManatotal(int manatotal) {
+        this.manatotal = manatotal;
     }
 
 
@@ -53,9 +69,9 @@ public class Mago extends Personagem {
 
     @Override
     public String status() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.getNome() + "\nMago\n" + "Vida -> " + this.getVidaAtual() + "/" + this.getVidatotal() + " Mana -> " + this.getManaatual() + "/" + this.getManatotal() + "\nArma -> " + this.cajado.getNome() + "\nAtk -> +" + this.cajado.getDano() + " Def -> +" + this.cajado.getDefesa() + "\nRange -> " + this.cajado.getRange() + " Nivel -> " + this.cajado.getNivel() + "\n------------------------------------------------------------";
     }
+
 
 
    

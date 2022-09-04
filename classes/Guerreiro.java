@@ -2,16 +2,19 @@ package classes;
 import Itens.Espada;
 
 public class Guerreiro extends Personagem {
-    private int energia;
+    private int energiaatual;
+    private int energiatotal;
     private Espada espada;
 
     Espada espadaInicial = new Espada("Espada bastarda", 3, 1, 1, 1);
 
     public Guerreiro(String nome) {
         super(nome);
-        this.energia = 20;
+        this.energiaatual = 20;
+        this.energiatotal = 20;
         this.espada = espadaInicial;
-        this.vida = 20;
+        this.vidaatual = 20;
+        this.vidatotal = 20;
         //TODO Auto-generated constructor stub
     }
 
@@ -29,13 +32,36 @@ public class Guerreiro extends Personagem {
     }
 
 
-    public int getEnergia() {
-        return energia;
+   
+
+
+    public int getEnergiaatual() {
+        return energiaatual;
     }
 
 
-    public void setEnergia(int energia) {
-        this.energia = energia;
+    public void setEnergiaatual(int energiaatual) {
+        this.energiaatual = energiaatual;
+    }
+
+
+    public int getEnergiatotal() {
+        return energiatotal;
+    }
+
+
+    public void setEnergiatotal(int energiatotal) {
+        this.energiatotal = energiatotal;
+    }
+
+
+    public Espada getEspadaInicial() {
+        return espadaInicial;
+    }
+
+
+    public void setEspadaInicial(Espada espadaInicial) {
+        this.espadaInicial = espadaInicial;
     }
 
 
@@ -51,7 +77,7 @@ public class Guerreiro extends Personagem {
 
     @Override
     public String status() {
-        return this.getNome() + "\nGuerreiro\n" + "Vida -> " + this.getVida() + "/20\nArma -> " + this.espada.getNome();
+        return this.getNome() + "\nGuerreiro\n" + "Vida -> " + this.getVidaAtual() + "/" + this.getVidatotal() + " Energia -> " + this.getEnergiaatual() + "/" + this.getEnergiatotal() + "\nArma -> " + this.espada.getNome() + "\nAtk -> +" + this.espada.getDano() + " Def -> +" + this.espada.getDefesa() + "\nRange -> " + this.espada.getRange() + " Nivel -> " + this.espada.getNivel() + "\n------------------------------------------------------------";
     }
 
 

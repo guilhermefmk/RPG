@@ -1,8 +1,8 @@
 package classes;
 public abstract class Personagem implements Acoes {
     protected String nome;
-    protected int vida;
-    
+    protected int vidaatual;
+    protected int vidatotal;
     
     // CONSTRUCTOR
     public Personagem(String nome) {
@@ -24,12 +24,20 @@ public abstract class Personagem implements Acoes {
         this.nome = nome;
     }
 
-    public int getVida() {
-        return vida;
+    public int getVidaAtual() {
+        return vidaatual;
     }
 
-    public void setVida(int vida) {
-        this.vida = vida;
+    public void setVidaAtual(int vidaatual) {
+        this.vidaatual = vidaatual;
+    }
+
+    public int getVidatotal() {
+        return vidatotal;
+    }
+
+    public void setVidatotal(int vidatotal) {
+        this.vidatotal = vidatotal;
     }
 
     
