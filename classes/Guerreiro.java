@@ -7,7 +7,7 @@ public class Guerreiro extends Personagem {
     private Espada espada;
 
     Espada espadaInicial = new Espada("Espada bastarda", 3, 1, 1, 1);
-
+    
     public Guerreiro(String nome) {
         super(nome);
         this.energiaatual = 20;

@@ -31,7 +31,9 @@ public class Equipe {
         this.arqueiro = arqueiro;
     }
 
-   
+   public String MostraEquipe(){
+    return this.guerreiro.status() + "\n" + this.mago.status() + "\n" + this.arqueiro.status();
+   }
 
 
     
