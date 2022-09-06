@@ -1,6 +1,6 @@
 package Itens;
 
-public abstract class Item {
+public abstract class Arma {
     protected String nome;
     protected int dano;
     protected int defesa;
@@ -10,7 +10,7 @@ public abstract class Item {
 
 
     
-    public Item(String nome, int dano, int defesa, int range, int nivel) {
+    public Arma(String nome, int dano, int defesa, int range, int nivel) {
         this.nome = nome;
         this.dano = dano;
         this.defesa = defesa;
@@ -47,6 +47,10 @@ public abstract class Item {
     }
     public int getNivel(){
         return nivel;
+    }
+
+    public String statsArma(){
+        return "\nArma -> " + this.getNome() + "\nAtk -> +" + this.getDano() + " Def -> +" + this.getDefesa() + "\nRange -> " + this.getRange() + " Nivel -> " + this.getNivel() + "\n------------------------------------------------------------";
     }
 
     
