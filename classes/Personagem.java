@@ -23,7 +23,7 @@ public abstract class Personagem implements Acoes {
     // MÉTODOS
 
     public String status(){
-        return this.getNome() + "\n" + this.getClasse() + "Level -> " + this.getLevel() + " Exp ->" + this.getExp() + "\n" + "Vida -> " + this.getVidaatual() + "/" + this.getVidatotal() + " " + this.getTipoCast() + " -> " + this.getCastAtual() + "/" + this.getCastTotal() + this.arma.statsArma();
+        return this.getNome() + "\n" + this.getClasse() + "\nLevel -> " + this.getLevel() + " Exp ->" + this.getExp() + "\n" + "Vida -> " + this.getVidaatual() + "/" + this.getVidatotal() + " " + this.getTipoCast() + " -> " + this.getCastAtual() + "/" + this.getCastTotal() + this.arma.statsArma();
     }
 
 
