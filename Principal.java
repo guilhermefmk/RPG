@@ -1,4 +1,8 @@
-import classes.*;
+
+import classes.player.Arqueiro;
+import classes.player.Guerreiro;
+import classes.player.Mago;
+
 import  java.util.*;
 
 public class Principal {

@@ -26,6 +26,20 @@ public abstract class Personagem implements Acoes {
         return this.getNome() + "\n" + this.getClasse() + "\nLevel -> " + this.getLevel() + " Exp ->" + this.getExp() + "\n" + "Vida -> " + this.getVidaatual() + "/" + this.getVidatotal() + " " + this.getTipoCast() + " -> " + this.getCastAtual() + "/" + this.getCastTotal() + this.arma.statsArma();
     }
 
+    public void equiparItem(){
+
+    }
+    public  void mover(){
+
+    }
+
+    public  void atacar(Arma a){
+
+    }
+    public  void defender(Arma a){
+        
+    }
+
 
 
     // GETTERS AND SETTERS
