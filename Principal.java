@@ -5,6 +5,14 @@ import classes.player.Mago;
 
 import  java.util.*;
 
+/**
+ * 
+ *  @author guilhermefmk
+ * 
+ */
+
+
+
 public class Principal {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

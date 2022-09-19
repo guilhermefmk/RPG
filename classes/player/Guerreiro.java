@@ -1,11 +1,11 @@
 package classes.player;
-import Itens.Espada;
+import Itens.*;
 import classes.Personagem;
 
 public class Guerreiro extends Personagem {
     
 
-    Espada armaInicial = new Espada("Espada bastarda", 3, 1, 1, 1);
+    Arma armaInicial = new Espada("Espada bastarda", 3, 1, 1, 1);
     
     public Guerreiro(String nome) {
         super(nome);

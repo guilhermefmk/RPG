@@ -1,11 +1,11 @@
 package classes.player;
-import Itens.Cajado;
+import Itens.*;
 import classes.Personagem;
 
 public class Mago extends Personagem {
 
 
-    Cajado armaInicial = new Cajado("Cajado antigo", 3, 1, 1);
+    Arma armaInicial = new Cajado("Cajado antigo", 3, 1, 1);
 
     public Mago(String nome) {
         super(nome);

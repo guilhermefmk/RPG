@@ -1,5 +1,6 @@
 package classes.player;
 import Itens.Arco;
+import Itens.*;
 import classes.Personagem;
 
 
@@ -7,7 +8,7 @@ public class Arqueiro extends Personagem {
 
     
 
-    Arco armaInicial = new Arco("Arco comum", 2, 0, 1);
+    Arma armaInicial = new Arco("Arco comum", 2, 0, 1);
 
     public Arqueiro(String nome) {
         super(nome);

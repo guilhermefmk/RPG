@@ -36,7 +36,5 @@ public class Equipe {
    public String MostraEquipe(){
     return this.guerreiro.status() + "\n" + this.mago.status() + "\n" + this.arqueiro.status();
    }
-
-
     
 }

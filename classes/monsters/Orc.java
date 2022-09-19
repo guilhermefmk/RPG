@@ -18,7 +18,5 @@ public class Orc extends Personagem {
         super.setVidaatual(22);
         //TODO Auto-generated constructor stub
     }
-
-
-    
+ 
 }

@@ -3,16 +3,16 @@ package classes;
 import Itens.Arma;
 
 public abstract class Personagem implements Acoes {
-    protected String nome;
-    protected int vidaatual;
-    protected int vidatotal;
-    protected int exp = 0;
-    protected String classe;
-    protected String tipoCast;
-    protected int castAtual;
-    protected int castTotal;
-    protected Arma arma;
-    protected int level = 0;
+    private String nome;
+    private int vidaatual;
+    private int vidatotal;
+    private int exp = 0;
+    private String classe;
+    private String tipoCast;
+    private int castAtual;
+    private int castTotal;
+    private Arma arma;
+    private int level = 0;
     
     
     // CONSTRUCTOR
